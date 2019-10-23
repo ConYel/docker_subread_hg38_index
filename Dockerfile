@@ -10,7 +10,7 @@ WORKDIR /home
 USER root
 
 RUN wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_32/GRCh38.primary_assembly.genome.fa.gz \ 
-	  && wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_32/gencode.v32.primary_assembly.annotation.gtf.gz \
+    && wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_32/gencode.v32.primary_assembly.annotation.gtf.gz \
     && mkdir hg38 && cd hg38 \ 
     && subread-buildindex -o hg38 -F -B ../GRCh38.primary_assembly.genome.fa.gz
     && rm ../GRCh38.primary_assembly.genome.fa.gz
