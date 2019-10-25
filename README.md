@@ -3,4 +3,7 @@ https://www.gencodegenes.org/human/
 
 GTF with Comprehensive gene annotation for the primary assembly is included
 
-Docker Hub: https://hub.docker.com/r/congelos/docker_subread_hg38_index
+## Docker Hub: https://hub.docker.com/r/congelos/docker_subread_hg38_index
+
+### Please use it with:
+`docker pull congelos/docker_subread_hg38_index`
